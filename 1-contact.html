@@ -8,47 +8,57 @@
 
     <body>
         <div class="nav-menu">
-            <div><a href="0-home.html">Home</a></div>
-            <div><a href="1-contact.html">Contact</a></div>
-            <div><a href="2-upcoming.html">Upcoming</a></div>
-            <div><a href="3-prior-work.html">Prior Work</a></div>
+            <div><a href="0-home.html" id="nav-home">Home</a></div>
+            <div><a href="1-contact.html" id="nav-contact">Contact</a></div>
+            <div><a href="2-upcoming.html" id="nav-upcoming">Upcoming</a></div>
+            <div><a href="3-prior-work.html" id="nav-prior">Prior Work</a></div>
         </div>
 
         <h1>Talk to Me</h1>
 
-        <form action="none" method="post">
-            <fieldset>
-                <legend>Chit-Chat</legend>
+        <div class="page-content">
+            <form action="none" method="post">
+                <fieldset>
+                    <!--<legend>Chit-Chat</legend>-->
 
-                <div class="form">
-                    <div class="text-entry">
-                        <label for="sayHi">Say Hi:</label>
-                        <input type="text" id="sayHi" name="said_hi">
-                    </div>
-
-                    <div class="checkbox">
-                        <p>Tell me I am...</p>
-                        <div>
-                            <label for="funny">Funny</label>
-                            <input type="checkbox" id="funny" name="funny">
+                    <div class="form">
+                        <div class="text-entry">
+                            <label for="yourName">Your Name:</label>
+                            <input type="text" id="yourName" name="your_name">
                         </div>
 
-                        <div>
-                            <label for="artistic">Artistic</label>
-                            <input type="checkbox" id="artistic" name="artistic">
+                        <div class="text-entry">
+                            <label for="email">Email address:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+
+                        <div class="checkbox">
+                            <p>Tell me I am...</p>
+                            <div>
+                                <label for="funny">Funny</label>
+                                <input type="checkbox" id="funny" name="funny">
+                            </div>
+
+                            <div>
+                                <label for="artistic">Artistic</label>
+                                <input type="checkbox" id="artistic" name="artistic">
+                            </div>
+                        </div>
+
+                        <div class="text-entry">
+                            <label for="comments">Ask Me Anything:</label>
+                            <textarea id="comments" name="comments"></textarea>
+                        </div>
+
+                        <div class="button">
+                            <input type="submit" value="Submit" id="button">
                         </div>
                     </div>
-
-                    <div class="text-entry"></div>
-                        <label for="comments">Ask Me Anything:</label>
-                        <textarea id="comments" name="comments"></textarea>
-                </div>
-
-                <input type="submit" value="Submit">
-            </fieldset>
+                </fieldset>
 
 
-        </form>
+            </form>
+        </div>
     </body>
 
 
